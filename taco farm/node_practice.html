@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Node Practice</title>
+	<meta charset="utf-8" />
+</head>
+<body>
+	<h1>Let's Add Some New Nodes to a List!</h1>
+	<ol></ol>
+	<input type="button" value="Click to Add" />
+
+	<script>
+		// add an event listener to the button
+		document.getElementsByTagName("input")[0].
+		addEventListener("click", addItem);
+
+		// definition of the addItem() function
+		function addItem() {
+			// this variable creates the data for a new <li> element
+			var item = document.createElement("li");
+
+			// this variable creates the data for a text mode
+			var itemText = document.createTextNode("I'm a new item!");
+			// attach the text node to the element node
+			item.appendChild(itemText);
+
+			// take the updated item node and attach it to the actual document
+
+			document.getElementsByTagName("ol")[0].appendChild(item);
+	</script>
+</body>
+</html>
