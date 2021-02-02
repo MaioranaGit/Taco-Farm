@@ -1,2 +1,2 @@
 # Taco_Farm
-Webpage containing Javascript elements and a counter
+Webpage containing JavaScript elements and a counter
